@@ -1,7 +1,7 @@
 // special numeric values
-positive_infinity = Infinity;
-negative_infinity = -Infinity;
-nan = NaN;
+const positive_infinity = Infinity;
+const negative_infinity = -Infinity;
+const nan = NaN;
 
 // NOTE: strings in js are unicode
 
@@ -13,9 +13,9 @@ console.log(`${nan} type:${typeof nan}`);
 // special characters in string literals
 // NOTE: don't use new lines in backticks
 //       it's ugly in code
-string_backticks = `yoyo
+const string_backticks = `yoyo
 iz it workin?`;
-string_regular = '1\n2';
+const string_regular = '1\n2';
 
 console.log(string_backticks);
 console.log(string_regular);
