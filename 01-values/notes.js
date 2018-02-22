@@ -21,10 +21,10 @@ console.log(string_backticks);
 console.log(string_regular);
 
 // NOTE: NaN != NaN
-console.log(NaN == NaN);
-console.log(Infinity == Infinity);
-console.log(undefined == undefined);
-console.log(null == null);
+console.log(NaN === NaN);
+console.log(Infinity === Infinity);
+console.log(undefined === undefined);
+console.log(null === null);
 
 // NOTE: operations on NaN produce NaN
 // NOTE: every type tries to match with the others

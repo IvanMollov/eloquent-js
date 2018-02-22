@@ -13,10 +13,10 @@ console.log('FizzBuzz #1');
 
 for (let number = 1; number <= 100; ++number) {
     let output;
-    if (number % 3 == 0) {
+    if (number % 3 === 0) {
         output = 'Fizz';
     } 
-    else if (number % 5 == 0) {
+    else if (number % 5 === 0) {
         output = 'Buzz';
     }
     else /* if (number is not divisible by 3 or 5) */ {
@@ -32,16 +32,16 @@ console.log('FizzBuzz #2');
 
 for (let number = 1; number <= 100; ++number) {
     let output = '';
-    if (number % 3 == 0) {
+    if (number % 3 === 0) {
         output += 'Fizz';
     } 
-    if (number % 5 == 0) {
+    if (number % 5 === 0) {
         output += 'Buzz';
     }
 
     // easy and a bit dumb
 
-    // if (output == '') {
+    // if (output === '') {
     //     output = number;
     // }
 

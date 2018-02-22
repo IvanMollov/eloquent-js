@@ -17,7 +17,7 @@ f(a);
 
 // NOTE: fc is not a function
 //       it is a reference to a function and must be defined before it is used
-fc(a);
+// fc(a); // illegal
 
 // NOTE: #3 if the let is changed the const is changed also
 b.a = 13;
@@ -52,3 +52,24 @@ function f(a, arg1 = 2, c)
 }
 
 let fc = f;
+
+let d = {
+    a: 1,
+    b: 2
+};
+
+// NOTE: reference
+function g(a)
+{
+    return a;
+}
+
+let e = g(d);
+
+console.log(d);
+console.log(e);
+
+d.a = 5;
+
+console.log(d);
+console.log(e);
