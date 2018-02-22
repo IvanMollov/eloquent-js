@@ -39,11 +39,16 @@ for (let number = 1; number <= 100; ++number) {
         output += 'Buzz';
     }
 
-    if (output == '') {
-        output = number;
-    }
+    // easy and a bit dumb
 
-    console.log(output);
+    // if (output == '') {
+    //     output = number;
+    // }
+
+    // console.log(output);
+
+    // NOTE: if output is '' the || returns right side expression
+    console.log(output || number);
 }
 
 console.log();
